@@ -32,8 +32,8 @@ In no particular order:
 - [ ] Token transfer statements are wrapped in a `require`.
 - [ ] Using `require` and `assert` properly. Only use `assert` for things that should never happen, typically used to validate state after making changes.
 - [ ] Using `keccak256` instead of the alias `sha3`.
-- [ ] Protected from ERC20 short address attack. [[?](https://vessenes.com/the-erc20-short-address-attack-explained/)
-- [ ] Using latest stable version of Solidity]
+- [ ] Protected from ERC20 short address attack. [[?](https://vessenes.com/the-erc20-short-address-attack-explained/)].
+- [ ] Using latest stable version of Solidity.
 
 
 <!--
