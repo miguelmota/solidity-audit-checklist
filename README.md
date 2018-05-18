@@ -64,11 +64,11 @@ In no particular order:
 
 ## Resources
 
-- [List of helper/utility functions](./UTILS.md)
 - [Smart contract best pracitices](https://github.com/ConsenSys/smart-contract-best-practices)
 - [Solidity idiosyncrasies](https://github.com/miguelmota/solidity-idiosyncrasies)
 - [Solidity security considerations](http://solidity.readthedocs.io/en/develop/security-considerations.html)
 - [Methodological security review of a smart contract](https://ethereum.stackexchange.com/questions/8551/methodological-security-review-of-a-smart-contract)
+- [List of helper/utility functions](./UTILS.md)
 
 ## License
 
