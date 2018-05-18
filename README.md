@@ -38,7 +38,15 @@ In no particular order:
 - [ ] Using the latest stable version of Solidity.
 
 
-[List of helper/utility functions](./UTILS.md)
+## Resources
+
+- [List of helper/utility functions](./UTILS.md)
+- [Smart contract best pracitices](https://github.com/ConsenSys/smart-contract-best-practices)
+- [Solidity idiosyncrasies](https://github.com/miguelmota/solidity-idiosyncrasies)
+
+## License
+
+MIT
 
 <!--
 NOTES
@@ -99,6 +107,5 @@ https://ethereum.stackexchange.com/questions/8551/methodological-security-review
 https://www.kingoftheether.com/contract-safety-checklist.html
 
 
-https://github.com/ConsenSys/smart-contract-best-practices
 http://solidity.readthedocs.io/en/develop/security-considerations.html
 -->
