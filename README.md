@@ -39,7 +39,7 @@ In no particular order:
 - [ ] The length of each stage of the crowdsale set (e.g. presale, public sale).
 - [ ] Specified which functions are intented to be controlled by the owner only (e.g. pausing crowdsale, progressing crowdsale stage, enabling distribution of tokens, etc..).
 - [ ] The crowdsale vesting logic is tested.
-- [ ] The crowdsale has a fallback function in place if it make reasonable sense.
+- [ ] The crowdsale has a fallback function in place if it makes reasonable sense.
 - [ ] The fallback function does not accept call data or only accepts prefixed data to avoid function signature collisions.
 - [ ] Imported contracts have been previously audited.
 - [ ] Token transfer statements are wrapped in a `require`.
