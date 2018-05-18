@@ -20,7 +20,7 @@ In no particular order:
 - [ ] Ether or tokens cannot be accidentally sent to the address `0x0`.
 - [ ] Conditions are checked using `require` before operations and state changes.
 - [ ] State is being set before and performing actions.
-- [ ] Protected from reentry attacks.
+- [ ] Protected from reentry attacks (A calling B calling A).
 - [ ] Properly implements the ERC20 interface [[?](https://github.com/ethereum/eips/issues/20)].
 - [ ] Only using modifier if necessary in more than one place.
 - [ ] All types are being explicitly set (e.g. using `uint256` instead of `uint`).
@@ -56,7 +56,9 @@ In no particular order:
 - [ ] Does not use `tx.origin` anywhere. [[?](https://vessenes.com/tx-origin-and-ethereum-oh-my/)]
 - [ ] Array items are shifted down when an item is deleted to avoid leaving a gap.
 - [ ] Use `revert` instead of `throw`.
+- [ ] Functions exit immediately when conditions aren't meant.
 - [ ] Using the latest stable version of Solidity.
+- [ ] Prefer pattern where receipient withdrawals funds instead of contract sending funds, however not always applicable.
 - [ ] Resolved warnings from compiler.
 
 
@@ -73,9 +75,5 @@ MIT
 
 <!--
 
-https://ethereum.stackexchange.com/questions/6204/writing-secure-smart-contracts-in-solidity
 https://ethereum.stackexchange.com/questions/8551/methodological-security-review-of-a-smart-contract
-
-
-http://solidity.readthedocs.io/en/develop/security-considerations.html
 -->
