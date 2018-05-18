@@ -6,7 +6,7 @@
   <br />
 </h1>
 
-> A checklist of things to look for when auditing a Solidity smart contract.
+> A checklist of things to look for when auditing Solidity smart contracts.
 
 This is not a comprehensive list and solidity is quickly evolving so please do due dilegence on your part.
 
