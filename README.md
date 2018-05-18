@@ -1,4 +1,10 @@
-# Solidity Audit Checklist
+<h1 align="center">
+  <br />
+  <img src="https://user-images.githubusercontent.com/168240/40218684-0e4f3e12-5a27-11e8-8a4f-ef2e4af685bd.png" alt="Solidity Audit Checklist" width="700" />
+  <br />
+  <br />
+  <br />
+</h1>
 
 > A checklist of things to look for when auditing a Solidity Smart contract
 
