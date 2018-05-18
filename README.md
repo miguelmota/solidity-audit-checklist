@@ -24,7 +24,7 @@ In no particular order:
 - [ ] Properly implements the ERC20 interface [[?](https://github.com/ethereum/eips/issues/20)].
 - [ ] Only using modifier if necessary in more than one place.
 - [ ] All types are being explicitly set (e.g. using `uint256` instead of `uint`).
-- [ ] All methods and loops are withing the maximum allowed gas limt.
+- [ ] All methods and loops are within the maximum allowed gas limt.
 - [ ] There are no unnecessary initalizations in the constructor (remember, default values are set).
 - [ ] There is complete test coverage; every smart contract method and every possible type of input is being tested.
 - [ ] Performed fuzz testing by using random inputs.
