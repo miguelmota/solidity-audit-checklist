@@ -18,7 +18,8 @@ In no particular order:
 - [ ] There are no arithmetic overflows/underflows in math operations.
 - [ ] Using the OpenZeppelin safe math library [[?](https://github.com/OpenZeppelin/openzeppelin-solidity/tree/master/contracts/math)].
 - [ ] Ether or tokens cannot be accidentally sent to the address `0x0`.
-- [ ] State is being set first, transfer actions last.
+- [ ] Conditions are checked using `require` before operations and state changes.
+- [ ] State is being set before and performing actions.
 - [ ] Protected from reentry attacks.
 - [ ] Properly implements the ERC20 interface [[?](https://github.com/ethereum/eips/issues/20)].
 - [ ] Only using modifier if necessary in more than one place.
@@ -39,11 +40,11 @@ In no particular order:
 - [ ] The length of each stage of the crowdsale is properly configured (e.g. presale, public sale).
 - [ ] Specified which functions are intented to be controlled by the owner only (e.g. pausing crowdsale, progressing crowdsale stage, enabling distribution of tokens, etc..).
 - [ ] The crowdsale vesting logic is tested.
+- [ ] The crowdsale has a fail-safe mode that when enabled by owner, restricts calls to function and enables refund functionality.
 - [ ] The crowdsale has a fallback function in place if it makes reasonable sense.
 - [ ] The fallback function does not accept call data or only accepts prefixed data to avoid function signature collisions.
 - [ ] Imported contracts have been previously audited.
 - [ ] Token transfer statements are wrapped in a `require`.
-- [ ] Conditions are checked using `require` before operations and state changes.
 - [ ] Using `require` and `assert` properly. Only use `assert` for things that should never happen, typically used to validate state after making changes.
 - [ ] Using `keccak256` instead of the alias `sha3`.
 - [ ] Protected from ERC20 short address attack. [[?](https://vessenes.com/the-erc20-short-address-attack-explained/)].
@@ -54,7 +55,9 @@ In no particular order:
 - [ ] Does not rely on block hashes for randomness (miners have influence on this).
 - [ ] Does not use `tx.origin` anywhere. [[?](https://vessenes.com/tx-origin-and-ethereum-oh-my/)]
 - [ ] Array items are shifted down when an item is deleted to avoid leaving a gap.
+- [ ] Use `revert` instead of `throw`.
 - [ ] Using the latest stable version of Solidity.
+- [ ] Resolved warnings from compiler.
 
 
 ## Resources
@@ -62,6 +65,7 @@ In no particular order:
 - [List of helper/utility functions](./UTILS.md)
 - [Smart contract best pracitices](https://github.com/ConsenSys/smart-contract-best-practices)
 - [Solidity idiosyncrasies](https://github.com/miguelmota/solidity-idiosyncrasies)
+- [Solidity security considerations](http://solidity.readthedocs.io/en/develop/security-considerations.html)
 
 ## License
 
