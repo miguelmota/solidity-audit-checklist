@@ -15,7 +15,7 @@ Not all listed items will apply to your specific smart contract.
 In no particular order:
 
 - [ ] All functions are `internal` except where explictly required to be `public`/`external`.
-- [ ] There are no overflows or underflows in math operations.
+- [ ] There are no arithmetic overflows/underflows in math operations.
 - [ ] Using the OpenZeppelin safe math library [[?](https://github.com/OpenZeppelin/openzeppelin-solidity/tree/master/contracts/math)].
 - [ ] Ether or tokens cannot be accidentally sent to the address `0x0`.
 - [ ] State is being set first, transfer actions last.
@@ -23,8 +23,10 @@ In no particular order:
 - [ ] Properly implements the ERC20 interface [[?](https://github.com/ethereum/eips/issues/20)].
 - [ ] Only using modifier if necessary in more than one place.
 - [ ] All types are being explicitly set (e.g. using `uint256` instead of `uint`).
+- [ ] All methods and loops are withing the maximum allowed gas limt.
 - [ ] There are no unnecessary initalizations in the constructor (remember, default values are set).
 - [ ] There is complete test coverage; every smart contract method and every possible type of input is being tested.
+- [ ] Performed fuzz testing by using random inputs.
 - [ ] Tested all the possible different states that the contract can be in.
 - [ ] Ether and token amounts are dealt in wei units.
 - [ ] The crowdsale end block/timestamp comes after start block/timestamp.
@@ -33,14 +35,25 @@ In no particular order:
 - [ ] The crowdsale min/max contribution allowed is set and tested.
 - [ ] The crowdsale whitelisting functionality is tested.
 - [ ] The crowdsale refund logic is tested.
+- [ ] Crowdsale participants are given their proportional token amounts or are allowed to claim their contribution.
 - [ ] The length of each stage of the crowdsale set (e.g. presale, public sale).
 - [ ] Specified which functions are intented to be controlled by the owner only (e.g. pausing crowdsale, progressing crowdsale stage, enabling distribution of tokens, etc..).
 - [ ] The crowdsale vesting logic is tested.
+- [ ] The crowdsale has a fallback function in place if it make reasonable sense.
+- [ ] The fallback function does not accept call data or only accepts prefixed data to avoid function signature collisions.
 - [ ] Imported contracts have been previously audited.
 - [ ] Token transfer statements are wrapped in a `require`.
+- [ ] Conditions are checked using `require` before operations and state changes.
 - [ ] Using `require` and `assert` properly. Only use `assert` for things that should never happen, typically used to validate state after making changes.
 - [ ] Using `keccak256` instead of the alias `sha3`.
 - [ ] Protected from ERC20 short address attack. [[?](https://vessenes.com/the-erc20-short-address-attack-explained/)].
+- [ ] Protected from recursive call attacks.
+- [ ] Arbitrary string inputs have length limits.
+- [ ] No secret data is exposed (all data on the blockchain is public).
+- [ ] Avoided using array where possible and using mappings instead.
+- [ ] Does not rely on block hashes for randomness (miners have influence on this).
+- [ ] Does not use `tx.origin` anywhere. [[?](https://vessenes.com/tx-origin-and-ethereum-oh-my/)]
+- [ ] Array items are shifted down when an item is deleted to avoid leaving a gap.
 - [ ] Using the latest stable version of Solidity.
 
 
