@@ -36,7 +36,7 @@ In no particular order:
 - [ ] The crowdsale whitelisting functionality is tested.
 - [ ] The crowdsale refund logic is tested.
 - [ ] Crowdsale participants are given their proportional token amounts or are allowed to claim their contribution.
-- [ ] The length of each stage of the crowdsale set (e.g. presale, public sale).
+- [ ] The length of each stage of the crowdsale is properly configured (e.g. presale, public sale).
 - [ ] Specified which functions are intented to be controlled by the owner only (e.g. pausing crowdsale, progressing crowdsale stage, enabling distribution of tokens, etc..).
 - [ ] The crowdsale vesting logic is tested.
 - [ ] The crowdsale has a fallback function in place if it makes reasonable sense.
