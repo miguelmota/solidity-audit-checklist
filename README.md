@@ -14,13 +14,13 @@ Not all listed items will apply to your specific smart contract.
 
 In no particular order:
 
-- [ ] All functions are `internal` except where explictly required to be `public`/`external`.
+- [ ] All functions are `internal` except where explictly required to be `public`/`external`. [[?](https://blog.zeppelin.solutions/on-the-parity-wallet-multisig-hack-405a8c12e8f7)]
 - [ ] There are no arithmetic overflows/underflows in math operations.
 - [ ] Using the OpenZeppelin safe math library [[?](https://github.com/OpenZeppelin/openzeppelin-solidity/tree/master/contracts/math)].
 - [ ] Ether or tokens cannot be accidentally sent to the address `0x0`.
 - [ ] Conditions are checked using `require` before operations and state changes.
 - [ ] State is being set before and performing actions.
-- [ ] Protected from reentry attacks (A calling B calling A).
+- [ ] Protected from reentry attacks (A calling B calling A). [[?](https://medium.com/@gus_tavo_guim/reentrancy-attack-on-smart-contracts-how-to-identify-the-exploitable-and-an-example-of-an-attack-4470a2d8dfe4)]
 - [ ] Properly implements the ERC20 interface [[?](https://github.com/ethereum/eips/issues/20)].
 - [ ] Only using modifier if necessary in more than one place.
 - [ ] All types are being explicitly set (e.g. using `uint256` instead of `uint`).
@@ -43,7 +43,7 @@ In no particular order:
 - [ ] The crowdsale has a fail-safe mode that when enabled by owner, restricts calls to function and enables refund functionality.
 - [ ] The crowdsale has a fallback function in place if it makes reasonable sense.
 - [ ] The fallback function does not accept call data or only accepts prefixed data to avoid function signature collisions.
-- [ ] Imported contracts have been previously audited.
+- [ ] Imported libraries have been previously audited and don't contain dyanmic parts that can be swapped out in future versions which can be be used maliciously. [[?](http://swende.se/blog/Devcon1-and-contract-security.html)]
 - [ ] Token transfer statements are wrapped in a `require`.
 - [ ] Using `require` and `assert` properly. Only use `assert` for things that should never happen, typically used to validate state after making changes.
 - [ ] Using `keccak256` instead of the alias `sha3`.
@@ -68,12 +68,8 @@ In no particular order:
 - [Smart contract best pracitices](https://github.com/ConsenSys/smart-contract-best-practices)
 - [Solidity idiosyncrasies](https://github.com/miguelmota/solidity-idiosyncrasies)
 - [Solidity security considerations](http://solidity.readthedocs.io/en/develop/security-considerations.html)
+- [Methodological security review of a smart contract](https://ethereum.stackexchange.com/questions/8551/methodological-security-review-of-a-smart-contract)
 
 ## License
 
 MIT
-
-<!--
-
-https://ethereum.stackexchange.com/questions/8551/methodological-security-review-of-a-smart-contract
--->
