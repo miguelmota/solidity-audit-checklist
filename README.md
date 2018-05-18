@@ -6,34 +6,34 @@ Please do due dilegence on your part. This is not a comprehensive list and solid
 
 In no particular order:
 
-- [ ] State is being set first and then tranfers last
-- [ ] Protected from reentry attacks
-- [ ] All functions are internal except where explictly required to be public/external
-- [ ] There are no overflows or underflows
-- [ ] Using the openzeppelin safe math library
-- [ ] Ether or tokens cannot b accidentally sent to the address 0x0
-- [ ] Properly implements the ERC20 interface
-- [ ] Only using modifier if necessary in more than one place
-- [ ] All types are being explicitly set e.g. using `uint256` instead of `uint`
-- [ ] There are no unecessary initalizations in the constructor (remember, default values are set)
-- [ ] There is complete test coverage; every smart contract method and every possible type of input is being tested
-- [ ] Tested all the possible different states that the contract can be in
-- [ ] Ether and token amounts are dealt in wei units
-- [ ] The crowdsale end block/timestamp comes after start block/timestamp
-- [ ] The crowdsale token exchange/conversion rate is properly set
-- [ ] The crowdsale soft/hard cap is set
-- [ ] The crowdsale min/max contributions allowed is set
-- [ ] The crowdsale whitelisting functionality is tested
-- [ ] The crowdsale refund logic is tested
-- [ ] The length of each stage of the crowdsale set (e.g. presale, public sale)
-- [ ] Specified which functions are intented to be controlled by the owner only (e.g. pausing crowdsale, progressing crowdsale stage, enabling distribution of tokens, etc..)
-- [ ] The crowdsale vesting logic is tested
-- [ ] The imported contracts have been audited
-- [ ] Token transfer statements are wrapped in a `require`?
-- [ ] Using `require` and `assert` properly. Only use `assert` for things that should never happen, typically used to validate state after making changes
-- [ ] Using `keccak256` instead of the alias `sha3`
-- [ ] Protected from ERC20 short address attack [more](https://vessenes.com/the-erc20-short-address-attack-explained/)
-- [ ] Using latest stable version of Solidity
+- [ ] State is being set first and then tranfers last.
+- [ ] Protected from reentry attacks.
+- [ ] All functions are internal except where explictly required to be public/external.
+- [ ] There are no overflows or underflows.
+- [ ] Using the openzeppelin safe math library.
+- [ ] Ether or tokens cannot b accidentally sent to the address `0x0`.
+- [ ] Properly implements the ERC20 interface.
+- [ ] Only using modifier if necessary in more than one place.
+- [ ] All types are being explicitly set e.g. using `uint256` instead of `uint`.
+- [ ] There are no unecessary initalizations in the constructor (remember, default values are set).
+- [ ] There is complete test coverage; every smart contract method and every possible type of input is being tested.
+- [ ] Tested all the possible different states that the contract can be in.
+- [ ] Ether and token amounts are dealt in wei units.
+- [ ] The crowdsale end block/timestamp comes after start block/timestamp.
+- [ ] The crowdsale token exchange/conversion rate is properly set.
+- [ ] The crowdsale soft/hard cap is set.
+- [ ] The crowdsale min/max contributions allowed is set.
+- [ ] The crowdsale whitelisting functionality is tested.
+- [ ] The crowdsale refund logic is tested.
+- [ ] The length of each stage of the crowdsale set (e.g. presale, public sale).
+- [ ] Specified which functions are intented to be controlled by the owner only (e.g. pausing crowdsale, progressing crowdsale stage, enabling distribution of tokens, etc..).
+- [ ] The crowdsale vesting logic is tested.
+- [ ] The imported contracts have been audited.
+- [ ] Token transfer statements are wrapped in a `require`.
+- [ ] Using `require` and `assert` properly. Only use `assert` for things that should never happen, typically used to validate state after making changes.
+- [ ] Using `keccak256` instead of the alias `sha3`.
+- [ ] Protected from ERC20 short address attack. [[?](https://vessenes.com/the-erc20-short-address-attack-explained/)
+- [ ] Using latest stable version of Solidity]
 
 
 <!--
