@@ -38,6 +38,8 @@ In no particular order:
 - [ ] Using the latest stable version of Solidity.
 
 
+[List of helper/utility functions](./UTILS.md)
+
 <!--
 NOTES
 The focus of this review was to ensure the following properties:
@@ -91,19 +93,6 @@ Medium vulnerabilites found in the contract
 Low severity vulnerabilites found
 Line by line comments
 Summary of the audit
-
-
-// file count
-// find . -name '*.sol' | wc -l
-
-// lines of code in project
-find . -name '*.sol' | xargs wc -l
-
-// number of external calls in project
-egrep '\.\w*\(.*\)' contracts/* -nr
-
-// file signatures
-shasum -a 256 *
 
 https://ethereum.stackexchange.com/questions/6204/writing-secure-smart-contracts-in-solidity
 https://ethereum.stackexchange.com/questions/8551/methodological-security-review-of-a-smart-contract
