@@ -6,7 +6,7 @@
   <br />
 </h1>
 
-> A checklist of things to look for when auditing a Solidity Smart contract
+> A checklist of things to look for when auditing a Solidity smart contract.
 
 This is not a comprehensive list and solidity is quickly evolving so please do due dilegence on your part.
 
@@ -71,7 +71,6 @@ MIT
 
 https://ethereum.stackexchange.com/questions/6204/writing-secure-smart-contracts-in-solidity
 https://ethereum.stackexchange.com/questions/8551/methodological-security-review-of-a-smart-contract
-https://www.kingoftheether.com/contract-safety-checklist.html
 
 
 http://solidity.readthedocs.io/en/develop/security-considerations.html
